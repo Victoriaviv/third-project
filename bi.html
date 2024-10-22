@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <title>grid layout</title>
+    <head>
+<style>
+    .grid {
+        display:block;
+        grid-template-columns:repeat(4,1fr);
+  
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: fit-content;
+        background-color:bisque;
+        flex-wrap: wrap;
+       position: relative;
+      
+      }
+         /* When the browser is at least 360px and above */
+         @media screen and (min-width:1200px) {
+          .grid {
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+      
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: fit-content;
+            background-color:bisque;
+                   flex-wrap: wrap;
+          
+          }
+        }
+  
+  .item1{
+    background-color:slateblue;
+   grid-column: span 2;
+   border-radius: 10px;
+   padding-left: 20px; 
+   color: beige;
+   }
+  .item2{
+    background-color:gray;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: beige;
+  }
+  .item3{
+    background-color:white;
+     grid-row: span 2;
+     border-radius: 10px;
+     padding-left: 20px;
+  }
+  .item4{
+    background-color:white;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  .item5{
+    background-color:rgba(60,60,60);
+     grid-column: span 2;
+     border-radius: 10px;
+     padding-left: 20px;
+     color: beige;
+  }
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+</style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="item1"><h3><img src=dd.jpeg> Daniel Clifford</h3><h5> verified Graduates</h5><p><b>
+              I receceived a job offer mid-course,and the subjects i learned<br>
+              were current,if not more so,in the company i joined.i<br>
+              honestly feel i got every penny`s worth.</b></p>
+              
+              
+              "i was an EMT for many yers before i joined the bootcamp. i have been looking to make a<br>
+              transaction and have heard some people who had an amazing experience here .i signed up for<br>
+              the free intro course and found it increadibly fun i enrolled shortly thereafter. the next 12<br>
+              weeks was the best and most grueling time of my life.since completing the course,i have<br>
+              successflly switched careers,working as asoftware Engineer at a VR staetup."</div>
+            <div class="item2"><h3><img src="kk.jpeg"> Jonathan Walters</h3>
+              <h5>verified Graduate</h5><br>
+              <p><b>The team was very <br>
+                supportive and kept me<br>
+                motivated.</b></p>
+                "I stareted as a total newbie with<br>
+              vitually no coding skills.I now work<br>
+              as amobile engineer for abig <br>
+              company.This was one of the best<br>
+              investments i have made in my self."</div>
+            <div class="item3"><h3><img src=vv.jpeg>kira Whittle</h3>
+              <h5>verified graduate</h5>
+              <p><b>such a life-changing<br>
+                experience.Highly<br>
+              recommended!</b></p>
+              "before joining the bootcamp.i have<br>
+              never written aline of code. ineeded<br>
+              some structure from professionals<br>
+              who can help me learn programming<br>
+              step by step.I was encouraged to<br>
+              enroll by a former student of theurs<br>
+              who can only say wonderful things<br>
+              about the program.the entire<br>
+              crriculum and staff did not<br>
+              disappoint.they were very hands-on<br>
+              and i never had to wait long for<br>
+              assistance.The agile team project,in<br>
+              particular.was outstanding.it took<br>
+              my learning to the next level in a way<br>
+              that no tutorial could ever have.in<br>
+              fact,i have often referred to it during<br>
+              interviews as an example of my<br>
+              development experience it certainly<br>
+              helped me land a job as a fdull-stack<br>
+              developer after receiving multiple<br>
+              offers.100%recommed!</div>  
+            <div class="item4"><h3><img src=vicky.jpeg>jeanette Harmon</h3>
+              <h5>verified Graduate</h5> 
+              <p><b>An overall wonderful<br>
+              and rewarding<br>
+            experience</b></p>
+            "Thank you for the wonderful<br>
+            experience!I nowhave a job Ireally<br>
+            enjoy,and make a good living while doing something i love."</div>
+          <div class="item5"><h3><img src=ke.jpg>Patrick Abrams</h3>
+            <h5>verified Graduate</h5>
+          <p><b>Awesome teaching support from TAs who did the bootcamp<br>
+         themselves.Getting guidance from them and learning from<br>
+        their experiences was easy</b></p>
+        "the staff seem genuinely concerned about my progress which i find really refreshing. the<br>
+        program gave me the confidence necessary to be able to go out in the world and present<br>
+        myself as acapable junior developer. the standard is above the rest.you will get the <br>
+        personal attention you need from  an incredible community of smart and amazing people ."
+           </div> 
+        </div>
+    </body>
+</html>
